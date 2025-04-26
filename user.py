@@ -10,6 +10,20 @@ import sqlite3
 # git config --global user.name "Abishek Sunuwar"
 # git config --global user.email "abisheksunuwar08@gmail.com"
 
+# git init => git initialize
+# git status => if you want to check what are the status of the files.
+# git diff => if you want to check what are the changes
+# git add . => if you want to track the change
+# git commit -m "Your message" => To commit message 
+# copy paste git code from github
+ 
+ 
+# whenever we change the code
+# 1. change the code
+# 2. git add .
+# 3. git commt -m "Your Message"
+# 4. git push
+
 def create_connection():
     try:
         con = sqlite3.connect("users.sqlite3")
