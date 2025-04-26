@@ -1,10 +1,14 @@
-import sqlite3
 import csv
+import sqlite3
 
 #CLI => COmmand Line Interface
 #CRUD => Create, Read, Update, Delete
 # 80% to 90% is based on CRUD
 
+
+# go to git bash
+# git config --global user.name "Abishek Sunuwar"
+# git config --global user.email "abisheksunuwar08@gmail.com"
 
 def create_connection():
     try:
