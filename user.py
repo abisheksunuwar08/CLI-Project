@@ -24,13 +24,6 @@ import sqlite3
 # 3. git commt -m "Your Message"
 # 4. git push
 
-def create_connection():
-    try:
-        con = sqlite3.connect("users.sqlite3")
-        return con
-    except Exception as e:
-        print(e)
-
 
 INPUT_STRING = """
 Enter the option:
@@ -45,6 +38,16 @@ Enter the option:
     9. UPDATE user
     10. Press any key to EXIT
 """
+
+
+def create_connection():
+    try:
+        con = sqlite3.connect("users.sqlite3")
+        return con
+    except Exception as e:
+        print(e)
+
+
 
 
 def create_table(con):
